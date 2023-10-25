@@ -23,7 +23,7 @@ export const getBestSeller = async () => {
 
 export const getShopByConsern = async () => {
   let response = await axios.post(baseUrl + "shop_by_concern", {
-    auth_token: md5(salt + "BEST").toString(),
+    auth_token: md5(salt + "CONCERN").toString(),
   });
   return response.data;
 };
